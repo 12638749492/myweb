@@ -5,6 +5,9 @@ on:
     paths:
       - "*.zip"
 
+permissions:
+  contents: write   # 👈 THIS FIXES THE 403
+
 jobs:
   unzip:
     runs-on: ubuntu-latest
